@@ -8,7 +8,7 @@
 
         body{
             
-            background-image: url(bac.jpg);
+            background-image: url(bg.jpg);
         }
 
         @media (max-width:500px){
@@ -66,12 +66,18 @@
             font-size: 13px;
         }
         .thump{
-            display: inline;
+            
+            width: 100%;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            white-space: nowrap; /* Keep images in a single row */
+            scroll-behavior: smooth; /* Smooth scrolling */
         }
         .thump img{
-            margin-left: 2px;
-            width: 360px;
-            height: 220px;
+            
+            width: 340px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
         }
 
         .Trending{
@@ -88,15 +94,16 @@
             margin-left: 15px;
             border-radius: 100px;
         }
+
         }
     </style>
 </head>
 <body>
     <div class="mobile">
     <div class="header">
-        <a href=""><img src="youtube.png" alt=""></a>
-        <a href=""><img src="instagram.png" alt=""></a>
-        <a href=""><img src="mail.png" alt=""></a></div>
+        <a href=""><img src="youtube.png" alt="youtube"></a>
+        <a href=""><img src="instagram.png" alt="instagram"></a>
+        <a href=""><img src="mail.png" alt="mail"></a></div>
     <div class="category">
         <h3 class="cat">Categories</h3>
         <ul class="fc">
@@ -117,9 +124,11 @@
 
         </ul>
     </div>
+    <h3 class="thump1">Exclusive Discounts for you!</h3>
     <div class="thump">
-        <h3 class="thump1">Exclusive Discounts for you!</h3>
-        <img src="coupen1.png" alt=".">
+        
+        <img src="coupen1.png" alt="coupen">
+        <img src="coupen2.png" alt="coupen">
     </div>
     <h3 class="Trending">Trending thumbnails</h3>
     <div class="container">
