@@ -9,7 +9,6 @@
         body{
             
             background-image: url(bg.jpg);
-            pointer-events: none;
         }
 
         @media (max-width:500px){
@@ -246,6 +245,12 @@
         <a href=""><img src="bac.jpg" alt=""></a>
     </div>
 </div>
-
+<script>
+    document.addEventListener('click',function(e)
+{
+    e.preventDefault();
+    e.stopPropagation();
+},true);
+</script>
 </body>
 </html>
