@@ -246,11 +246,9 @@
     </div>
 </div>
 <script>
-    document.addEventListener('click',function(e)
-{
-    e.preventDefault();
-    e.stopPropagation();
-},true);
+    document.addEventListener('contextmenu', event =>
+        event.preventDefault()
+    );
 </script>
 </body>
 </html>
